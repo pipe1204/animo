@@ -3,7 +3,11 @@ import { LeftColumn, RightColumn, TopMain } from "../components"
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
 
-const Contact = ({mode}) => {
+interface Mode {
+  mode: string
+}
+
+const Contact = ({mode}: Mode) => {
   return (
     <div className={mode ? 'dark__main' : 'main--div'}>
       <LeftColumn />

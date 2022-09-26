@@ -4,7 +4,6 @@ import Routes from "../src/Routes"
 //components
 import Navbar from "./layout/Header/Navbar"
 import { useState } from 'react'
-import AboutMe from './pages/AboutMe'
 
 const App: React.FC = () => {
 

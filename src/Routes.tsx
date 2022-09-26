@@ -1,7 +1,8 @@
 import {Routes, Route} from "react-router-dom"
 import { AboutMe, Fundices, Trivia, WeatherApp, Countrypedia, Wefleet, Onedoor, Courses, Reads, Playlist, Contact } from "./pages"
+import { Mode } from "./assets/utils/Interfaces"
 
-const MainRoutes = ({mode}) => {
+const MainRoutes = ({mode}: Mode) => {
   return (
     <div>
         <Routes>

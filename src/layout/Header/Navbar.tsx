@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import "./navbar.css"
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri" 
+import { NavProps } from "../../assets/utils/Interfaces"
 
 
-const Navbar = ({dark, mode}) => {
+const Navbar = ({mode, dark}: NavProps) => {
   
   const [toggleMenu, setToggleMenu] = useState(true)
 

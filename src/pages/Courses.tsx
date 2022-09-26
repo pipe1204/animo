@@ -1,8 +1,9 @@
 import '../assets/styles/pages.css'
 import { LeftColumn, RightColumn, TopMain, MainAboutColumn } from "../components"
 import { coursesLinks } from "../data/aboutLinks"
+import { Mode } from '../assets/utils/Interfaces'
 
-const Courses = ({mode}) => {
+const Courses = ({mode}: Mode) => {
   return (
     <div className={mode ? 'dark__main' : 'main--div'}>
       <LeftColumn />

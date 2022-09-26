@@ -1,6 +1,6 @@
+import { FormatProps } from "../assets/utils/Interfaces"
 
-
-const MainAboutColumn = ({mode, links}) => {
+const MainAboutColumn = ({mode, links}: FormatProps) => {
 
   let courses = links.map(({id, title, path, company}) => {
 
