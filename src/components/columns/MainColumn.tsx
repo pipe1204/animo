@@ -1,5 +1,7 @@
 
-const MainColumn = ({mode, title, skills, description, portfolioLinks}) => {
+import { MainColumnProps } from "../../assets/utils/Interfaces"
+
+const MainColumn = ({mode, title, skills, description, portfolioLinks}: MainColumnProps) => {
 
   let skillsUsed = skills.map((name) => {
     return <span className={mode ? 'tech-stack' : 'gradient__text'}>{name}</span>

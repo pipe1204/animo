@@ -1,7 +1,7 @@
-import "../assets/styles/main.styles.css"
-import { leftCategories } from '../data/categories'
-import gifImage from "../assets/images/giphy.gif"
-import { listOfCategories } from "../assets/utils/Functions"
+import "../../assets/styles/main.styles.css"
+import { leftCategories } from '../../data/categories'
+import gifImage from "../../assets/images/giphy.gif"
+import { listOfCategories } from "../../assets/utils/Functions"
 
 const LeftColumn = () => {
 

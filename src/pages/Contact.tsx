@@ -1,7 +1,11 @@
 import '../assets/styles/pages.css'
-import { LeftColumn, RightColumn, TopMain } from "../components"
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
+
+//components
+import TopMain from "../components/columns/TopMain"
+import LeftColumn from "../components/columns/LeftColumn"
+import RightColumn from "../components/columns/RightColumn"
 
 interface Mode {
   mode: string

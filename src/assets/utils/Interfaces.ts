@@ -1,6 +1,11 @@
 export interface FormatProps {
     mode: boolean,
-    links: []
+    aboutLinks: {
+        id: number,
+        title: string,
+        path: string,
+        company: string
+    }[]
 }
 
 export interface Mode {
@@ -10,4 +15,16 @@ export interface Mode {
 export interface NavProps {
     mode: boolean,
     dark: any
+}
+
+export interface MainColumnProps {
+    mode: boolean,
+    title: string,
+    description: string,
+    skills: any[],
+    portfolioLinks: {
+        id: number,
+        title: string,
+        link: string
+    }[]
 }

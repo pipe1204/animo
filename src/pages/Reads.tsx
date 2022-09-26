@@ -1,7 +1,12 @@
 import '../assets/styles/pages.css'
-import { LeftColumn, RightColumn, TopMain, MainAboutColumn } from "../components"
 import { readsLinks } from "../data/aboutLinks"
 import { Mode } from '../assets/utils/Interfaces'
+
+//components
+import TopMain from "../components/columns/TopMain"
+import LeftColumn from "../components/columns/LeftColumn"
+import RightColumn from "../components/columns/RightColumn"
+import MainAboutColumn from "../components/columns/MainAboutColumn"
 
 const Reads = ({mode}: Mode) => {
   return (
@@ -11,7 +16,7 @@ const Reads = ({mode}: Mode) => {
         <TopMain />
         <MainAboutColumn 
           mode={mode}
-          links={readsLinks}
+          aboutLinks={readsLinks}
         />
         <h2>Learn something new everyday and continue learning 💪🏼</h2>
       </div>

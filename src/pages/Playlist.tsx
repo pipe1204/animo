@@ -1,8 +1,14 @@
 import '../assets/styles/pages.css'
-import { LeftColumn, RightColumn, TopMain, MainAboutColumn } from "../components"
 import { playlistLinks } from "../data/aboutLinks"
+import { Mode } from '../assets/utils/Interfaces'
 
-const Playlist = ({mode}) => {
+//components
+import TopMain from "../components/columns/TopMain"
+import LeftColumn from "../components/columns/LeftColumn"
+import RightColumn from "../components/columns/RightColumn"
+import MainAboutColumn from "../components/columns/MainAboutColumn"
+
+const Playlist = ({mode}: Mode) => {
   return (
     <div className={mode ? 'dark__main' : 'main--div'}>
       <LeftColumn />
@@ -10,7 +16,7 @@ const Playlist = ({mode}) => {
         <TopMain />
         <MainAboutColumn 
           mode={mode}
-          links={playlistLinks}
+          aboutLinks={playlistLinks}
         />
         <h2>Learn something new everyday and continue learning 💪🏼</h2>
       </div>

@@ -1,14 +1,15 @@
 import "../assets/styles/pages.css"
 import Typewriter from 'typewriter-effect';
+import { Mode } from "../assets/utils/Interfaces";
 
 
 //components
-import TopMain from "../components/TopMain"
-import LeftColumn from "../components/LeftColumn"
-import RightColumn from "../components/RightColumn"
+import TopMain from "../components/columns/TopMain"
+import LeftColumn from "../components/columns/LeftColumn"
+import RightColumn from "../components/columns/RightColumn"
 
 
-const AboutMe: React.FC = ({mode}) => {
+const AboutMe = ({mode}: Mode) => {
 
   return (
       <div className={mode ? 'dark__main' : 'main--div'}>

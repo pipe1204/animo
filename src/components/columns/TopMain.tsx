@@ -1,7 +1,7 @@
-import "../assets/styles/main.styles.css"
+import "../../assets/styles/main.styles.css"
 import { useEffect, useState } from "react"
-import { selectRandom } from "../assets/utils/Functions"
-import { quotes } from "../data/quotes"
+import { selectRandom } from "../../assets/utils/Functions"
+import { quotes } from "../../data/quotes"
 
 //components
 

@@ -1,7 +1,6 @@
-import "../assets/styles/main.styles.css"
-import { rightCategories } from '../data/categories'
-import { listOfCategories } from "../assets/utils/Functions"
-import gif from "../assets/images/motivation.gif"
+import "../../assets/styles/main.styles.css"
+import { rightCategories } from "../../data/categories"
+import { listOfCategories } from "../../assets/utils/Functions"
 
 
 const RightColumn: React.FC = () => {

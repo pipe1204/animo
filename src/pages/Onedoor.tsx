@@ -1,8 +1,14 @@
 import '../assets/styles/pages.css'
-import { LeftColumn, RightColumn, TopMain, MainColumn } from "../components"
 import { onedoorLinks } from "../data/portfolioLinks"
+import { Mode } from '../assets/utils/Interfaces'
 
-const Onedoor = ({mode}) => {
+//components
+import TopMain from "../components/columns/TopMain"
+import LeftColumn from "../components/columns/LeftColumn"
+import RightColumn from "../components/columns/RightColumn"
+import MainColumn from "../components/columns/MainColumn"
+
+const Onedoor = ({mode}: Mode) => {
 
   return (
     <div className={mode ? 'dark__main' : 'main--div'}>
