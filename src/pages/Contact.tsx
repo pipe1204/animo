@@ -1,15 +1,12 @@
 import '../assets/styles/pages.css'
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
+import { Mode } from '../assets/utils/Interfaces'
 
 //components
 import TopMain from "../components/columns/TopMain"
 import LeftColumn from "../components/columns/LeftColumn"
 import RightColumn from "../components/columns/RightColumn"
-
-interface Mode {
-  mode: string
-}
 
 const Contact = ({mode}: Mode) => {
   return (

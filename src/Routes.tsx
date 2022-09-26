@@ -1,6 +1,17 @@
 import {Routes, Route} from "react-router-dom"
-import { AboutMe, Fundices, Trivia, WeatherApp, Countrypedia, Wefleet, Onedoor, Courses, Reads, Playlist, Contact } from "./pages"
 import { Mode } from "./assets/utils/Interfaces"
+
+import AboutMe from "./pages/AboutMe"
+import Fundices from "./pages/Fundices"
+import Trivia from "./pages/Trivia"
+import WeatherApp from "./pages/WeatherApp"
+import Countrypedia from "./pages/Countrypedia"
+import Wefleet from "./pages/Wefleet"
+import Onedoor from "./pages/Onedoor"
+import Courses from "./pages/Courses"
+import Reads from "./pages/Reads"
+import Playlist from "./pages/Playlist"
+import Contact from "./pages/Contact"
 
 const MainRoutes = ({mode}: Mode) => {
   return (
