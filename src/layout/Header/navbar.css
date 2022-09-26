@@ -217,7 +217,20 @@
 
 @media screen and (max-width: 550px) {
     .navbar {
-        padding: 2rem;
+        padding: 1rem;
+    }
+
+    .navbar.dark {
+        padding: 1rem;
+    }
+
+    .navbar-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        display: none;
     }
 
     .navbar-content-cta{
@@ -226,10 +239,23 @@
 
     .navbar-content-menu {
         top: 20px;
+        display: none;
     }
 
-    .navbar-content-menu-cta {
+    /* .navbar-content-menu-cta {
         display: block;
+    } */
+
+    .dev-box h1 {
+        font-size: 15px;
+        margin: 0 0.5rem;
+    }
+
+    .dre-box h1 {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0 0.5rem;
+        color: #2B283A;
     }
     
 }

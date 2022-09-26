@@ -203,3 +203,23 @@ span .noDark {
 .content-icons svg {
     margin: 50px;
 }
+
+@media screen and (max-width: 550px) {
+    .mid--column {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .main--div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    .dark__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
