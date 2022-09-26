@@ -1,11 +1,176 @@
-body {
-    font-family: 'Roboto', sans-serif;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.App {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+    background: white;
+    font-family: var(--font-family);
+    color: #2B283A;;
 }
+
+.app-dark {
+  background-color: #21222A;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.app-dark li {
+  color: white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(160deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(160deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(160deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F49867', endColorstr='#AE67FA', GradientType=1 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(160deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(160deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  @keyframes scale-up-enter {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  @-webkit-keyframes rotate-bl {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
+    }
+  }
+  @keyframes rotate-bl {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left;
+    }
+  }
+
+  @-webkit-keyframes rotate-scale-up-diag-2 {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+  
+  @keyframes rotate-scale-up-diag-2 {
+    0% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+              transform: scale(2) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+              transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem;
+    }
+
+    .section__margin {
+        margin: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+
+    .section__margin {
+        margin: 4rem 2rem;
+    }
+  }

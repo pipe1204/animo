@@ -1,23 +1,10 @@
-.main--div {
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-}
-
 .left--column {
     width: 25%;
-    margin-left: 50px;
+    margin-left: 80px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.mid--column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .topMain--div {
@@ -40,11 +27,12 @@
 .quote--author {
     font-weight: 700;
     text-align: right;
+    margin-top: 10px;
 }
 
 .right--column {
     width: 25%;
-    margin-right: 50px;
+    margin-right: 80px;
     padding-right: 20px;
     display: flex;
     flex-direction: column;
@@ -53,10 +41,12 @@
 
 .gif--container--right {
     text-align: right;
+    margin-top: 20px;
 }
 
 .gif--container--left {
     text-align: left;
+    margin-top: 20px;
 }
 
 .motivation--gif {
@@ -67,11 +57,12 @@
 .categories--title {
     font-weight: 400;
     font-size: 0.9rem;
+    margin-bottom: 20px;
 }
 
 .link--categories {
     text-decoration: none;
-    color: black;
+    color: #2B283A;
 }
 
 .categories {
@@ -114,12 +105,30 @@
     animation: none;
 }
 
-    /* color: #0f1419;
-    border: 1px solid #cfd9de;
-    border-radius: 18px;
-    background: white;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-weight: bold; */
+.about--div {
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animo--meaning {
+    font-style: italic;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+.animo--word {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+}
+
+.animo {
+    line-height: 1.6;
+}
+
+    

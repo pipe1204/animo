@@ -1,16 +1,18 @@
 import "../assets/styles/main.styles.css"
 import { leftCategories } from '../data/categories'
-import gif from "../assets/images/motivation2.gif"
+import gifImage from "../assets/images/giphy.gif"
 import { listOfCategories } from "../assets/utils/Functions"
 
-const LeftColumn: React.FC= () => {
+const LeftColumn = () => {
+
+  console.log
     
   return (
-    <div className="left--column">
-        <h5 className="categories--title">CATEGORIES</h5>
+    <div className={"left--column"}>
+        <h5 className="categories--title">PORTFOLIO</h5>
         {listOfCategories(leftCategories)}
         <div className="gif--container--left">
-          <img className="motivation--gif" src={gif} alt="loading..."/>
+          <img className="motivation--gif" src={gifImage} alt="loading..."/>
         </div>
     </div>
   )

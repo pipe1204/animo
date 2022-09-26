@@ -1,24 +1,28 @@
 import './App.css'
-import { Route, Switch } from 'react-router-dom';
+import Routes from "../src/Routes"
 
 //components
 import Navbar from "./layout/Header/Navbar"
-
-//views
-import AllCategories from './pages/AllCategories';
-import About from './pages/About';
-import Professional from './pages/Professional';
+import { useState } from 'react'
+import AboutMe from './pages/AboutMe'
 
 const App: React.FC = () => {
 
+  const [darkMode, setDarkMode] = useState(false)
+
+  function handleToggle() {
+    setDarkMode(prevState => !prevState)
+  }
+
   return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={AllCategories} />
-        <Route path="/about" component={About} />
-        <Route path="/professionals" component={Professional} />
-      </Switch>
+    <div className={darkMode ? 'app-dark' : "App"}>
+      <Navbar 
+        dark={handleToggle}
+        mode={darkMode}
+      />
+      <Routes 
+        mode={darkMode}
+      />
     </div>
   )
 }

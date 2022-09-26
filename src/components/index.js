@@ -1,0 +1,5 @@
+export { default as LeftColumn } from "./LeftColumn.tsx"
+export { default as RightColumn } from "./RightColumn.tsx"
+export { default as TopMain } from "./TopMain.tsx"
+export { default as MainColumn } from "./MainColumn.tsx"
+export { default as MainAboutColumn } from "./MainAboutColumn.tsx"

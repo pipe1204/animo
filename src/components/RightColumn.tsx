@@ -8,11 +8,8 @@ const RightColumn: React.FC = () => {
 
   return (
     <div className="right--column">
-        <h5 className="categories--title">RESOURCES</h5>
+        <h5 className="categories--title">ME</h5>
         {listOfCategories(rightCategories)}
-        <div className="gif--container--right">
-          <img className="motivation--gif" src={gif} alt="loading..."/>
-        </div>
     </div>
   )
 }

@@ -1,70 +1,60 @@
 export const leftCategories = [
     {
         id: 1, 
-        title: "💼 Professional",
-        path: "/professional"
+        title: "🌦 Weather App",
+        path: "/weather-app"
     },
     { 
         id: 2, 
-        title: "🎢 Founders / Startups",
-        path: "/startups"
+        title: "🎲 Fundices",
+        path: "/fundices"
     }, 
     {
         id: 3,
-        title: "❤️ Relationships",
-        path: "/relationships"
+        title: "🙋🏻‍♀️ Trivia",
+        path: "/trivia"
     }, 
     {
         id: 4,
-        title: "🏠 Family",
-        path: "/family"
+        title: "🌎 Countrypedia",
+        path: "/countrypedia"
     }, 
     {
         id: 5,
-        title: "🍼 Parenting",
-        path: "/parenting"
+        title: "🚚 WeFleet",
+        path: "/wefleet"
     }, 
     {
         id: 6,
-        title: "🥰 Self-esteem",
-        path: "/selfesteem"
-    }, 
-    {
-        id: 7,
-        title: "😷 Health",
-        path: "/health"
-    }, 
-    {
-        id:8,
-        title: "🚭 Addictions",
-        path: "/addictions"
+        title: "🔗 OneDoor",
+        path: "/onedoor"
     }
 ]
 
 export const rightCategories = [
     {
         id: 1, 
-        title: "🎥 Videos",
-        path: "/videos"
+        title: "👨🏽‍💻 About",
+        path: "/"
     },
     { 
         id: 2, 
-        title: "🎧 Songs",
-        path: "/songs"
+        title: "🎓 Courses",
+        path: "/courses"
     }, 
     {
         id: 3,
-        title: "📚 Books",
-        path: "/books"
-    }, 
+        title: "📚 My Reads",
+        path: "/reads"
+    },
     {
         id: 4,
-        title: "📋 Posts",
-        path: "/posts"
-    }, 
+        title: "🎧 My Playlists",
+        path: "/playlist"
+    },  
     {
-        id: 5,
-        title: "🎙 Podcasts",
-        path: "/podscasts"
+        id: 4,
+        title: "📞 Contact",
+        path: "/contact"
     }
 ]

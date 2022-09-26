@@ -1,23 +1,55 @@
-import React from 'react'
-import "../../assets/styles/navbar.style.css"
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import "./navbar.css"
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri" 
 
-const Navbar: React.FC = () => {
+
+const Navbar = ({dark, mode}) => {
+  
+  const [toggleMenu, setToggleMenu] = useState(true)
+
+
   return (
-    <header className='navbar'>
-        <div className='navbar--logo-div'>
-        <span>💪🏼</span>
-        <h1 className='navbar--logo'>animo</h1>
+    <div className={mode ? 'navbar dark' : 'navbar'}>
+      <div className='navbar-content'>
+        <div className='navbar-content-logo'>
+          <div className='logo-box'>
+            <div className='dev-box'>
+              <h1>DEV</h1>
+            </div>
+            <div className='dre-box'>
+              <h1 className={mode ? 'gradient__text' : ""}>DRE</h1>
+            </div>
+          </div>
         </div>
-        <div className='navbar--links'>
-          <Link to="/" className='navbar--home'>Home</Link>
-          <Link to="/about" className='navbar--about'>About us</Link>
+        <div className="toggler" onClick={dark}>
+          <p className="toggler--light">Light</p>
+          <div className="toggler--slider">
+            <div className="toggler--slider--circle"></div>
+          </div>
+          <p className={mode ? "toggler--dark" : "gradient__text"}>Dark</p>
         </div>
-        <div className='navbar--buttons'>
-        <button className='navbar--login'>Login</button>
-        <button className='navbar--signup'>Sign up</button>
+        <div className='navbar-menu'>
+          {
+            toggleMenu ? <RiCloseLine color="white" size={27} onClick={() => setToggleMenu(false)} /> 
+            : 
+            <RiMenu3Line color="white" size={27} onClick={() => setToggleMenu(true)}/>
+          }
+          {
+            toggleMenu && (
+              <div className='navbar-content-menu scale-up-center'>
+                <div className='navbar-content-menu-links'>
+                  <h3>test</h3> 
+                </div>
+                <div className='navbar-content-menu-cta'>
+                  <p>Sign in</p>
+                  <button>Sign up</button>
+                </div>
+              </div>
+            )
+          }
         </div>
-    </header>
+      </div>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { selectRandom } from "../assets/utils/Functions"
 import { quotes } from "../data/quotes"
 
 //components
-import Button from "./Button"
+
 
 const TopMain = () => {
 
@@ -27,7 +27,6 @@ const TopMain = () => {
       <div className="div--quote">
         <h4 className="quote--sentence">"{quote.quote}"</h4>
         <p className="quote--author">{quote.author}</p>
-        <Button />
       </div>
     </div>
   )
