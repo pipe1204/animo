@@ -22,6 +22,8 @@ export interface MainColumnProps {
     title: string,
     description: string,
     skills: any[],
+    backgroundColor: string,
+    frame: string,
     portfolioLinks: {
         id: number,
         title: string,

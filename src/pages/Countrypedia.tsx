@@ -21,6 +21,8 @@ const Countrypedia = ({mode}: Mode) => {
           description="A web app that searches countries and provides their information including Covid related data. Uses React components and hooks utilizing a country API and COVID API to extract the data."
           skills={["React", "JavaScript", "HTML", "CSS", "REST APIs"]}
           portfolioLinks={countryLinks}
+          frame='https://github.com/pipe1204/countrypedia'
+          backgroundColor='#38E54D'
         />
       </div>
       <RightColumn />

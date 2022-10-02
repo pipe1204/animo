@@ -21,6 +21,8 @@ const Trivia = ({mode}: Mode) => {
           description="A trivia web app for people to have fun testing their knowledge. I built this app as my first ever project when learning how to code in JavaScript. it used plain Javascript and also a trivia API to get the data for the questions and answers. Also used HTML and CSS for the design."
           skills={["JavaScript", "HTML", "CSS", 'APIs']}
           portfolioLinks={triviaLinks}
+          backgroundColor="#FF577F"
+          frame="https://trivia-six.vercel.app/"
         />
       </div>
       <RightColumn />

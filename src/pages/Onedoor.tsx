@@ -21,6 +21,8 @@ const Onedoor = ({mode}: Mode) => {
           description="My first project as a professional developer, a web app that allows business owners consolidate all their communication channels into one single link. I worked as a Junior front-End Developer remote in Medellin, Colombia and collaborated with Senior developers to build a business that will be then sold to a bigger Startup in Colombia. I worked on the front end of the application using ReactJS, CSS and a few libraries."
           skills={["React", "JavaScript", "HTML", "CSS", 'APIs']}
           portfolioLinks={onedoorLinks}
+          frame='https://github.com/'
+          backgroundColor='#87A2FB'
         />
       </div>
       <RightColumn />

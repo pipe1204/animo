@@ -1,10 +1,10 @@
 
 import { MainColumnProps } from "../../assets/utils/Interfaces"
 
-const MainColumn = ({mode, title, skills, description, portfolioLinks}: MainColumnProps) => {
+const MainColumn = ({mode, title, skills, description, portfolioLinks, backgroundColor, frame}: MainColumnProps) => {
 
   let skillsUsed = skills.map((name) => {
-    return <span className={mode ? 'tech-stack' : 'gradient__text'}>{name}</span>
+    return <span className={mode ? 'tech-stack' : 'tech__stack__light gradient__text'}>{name}</span>
   })
 
   let links = portfolioLinks.map(({id, title, link}) => {
@@ -21,6 +21,12 @@ const MainColumn = ({mode, title, skills, description, portfolioLinks}: MainColu
           </div>
           <div className={mode ? " portfolio__links dark__mode__links" : 'portfolio__links'}>
             {links}
+          </div>
+          <div className="iframe__main">
+            <div className="background__box" style={{backgroundColor: backgroundColor}}></div>
+            <div className="iframe__content">
+              <iframe src={frame}></iframe>
+            </div>
           </div>
         </div> 
   )

@@ -65,3 +65,29 @@ export const onedoorLinks = [
         link: "https://github.com/pipe1204/onedoor"
     },
 ]
+
+export const partyLinks = [
+    {
+        id: 1, 
+        title: "Website",
+        link: "https://party-creator.vercel.app/"
+    },
+    {
+        id: 2, 
+        title: "Github",
+        link: "https://github.com/pipe1204/party-invite-creator"
+    },
+]
+
+export const rickLinks = [
+    {
+        id: 1, 
+        title: "Website",
+        link: "https://rickandmorty-seven-jade.vercel.app/"
+    },
+    {
+        id: 2, 
+        title: "Github",
+        link: "https://github.com/pipe1204/rick-and-morty"
+    },
+]
