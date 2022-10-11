@@ -18,7 +18,6 @@ const Playlist = ({mode}: Mode) => {
           mode={mode}
           aboutLinks={playlistLinks}
         />
-        <h2>Learn something new everyday and continue learning 💪🏼</h2>
       </div>
       <RightColumn />
     </div>

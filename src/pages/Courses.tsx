@@ -18,7 +18,6 @@ const Courses = ({mode}: Mode) => {
           mode={mode}
           aboutLinks={coursesLinks}
         />
-        <h2>Learn something new everyday and continue learning 💪🏼</h2>
       </div>
       <RightColumn />
     </div>

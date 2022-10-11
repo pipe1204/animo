@@ -13,6 +13,7 @@ const MainAboutColumn = ({mode, aboutLinks}: FormatProps) => {
     
   return (
     <div className='mainAbout__content__container rotate-bl'>
+      <h4 className="learn">💪🏼 Learn something new everyday and continue learning 💪🏼</h4>
         {courses}
     </div>
   )

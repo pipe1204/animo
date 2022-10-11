@@ -11,11 +11,16 @@ body {
     color: #2B283A;;
 }
 
+.App {
+  transition: all 0.3s ease-in-out;
+}
+
 .app-dark {
   background-color: #21222A;
   color: white;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .app-dark li {

@@ -73,13 +73,13 @@ export const playlistLinks = [
     },
     {
         id: 3, 
-        title: "Adictops a la apariencia",
+        title: "Adictos a la apariencia",
         path: "https://www.youtube.com/watch?v=VxUQR0WR6t0",
         company: "Dante Gebel"
     },
     {
         id: 4, 
-        title: "Alguie tiene que hablar de Cash",
+        title: "Alguien tiene que hablar de Cash",
         path: "https://www.youtube.com/watch?v=cRNXy8irI4E",
         company: "Dante Gebel"
     },

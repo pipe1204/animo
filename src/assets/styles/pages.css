@@ -10,7 +10,6 @@
 .dark__main {
     width: 100%;
     margin-top: 30px;
-    padding: 50px 0;
     display: flex;
     font: var(--font-family);
     background: url("../../assets//images/dark.png");
@@ -230,6 +229,17 @@ span .noDark {
     margin: 30px 0  ;
     border-bottom: 1px solid #AE67FA;
     padding-bottom: 8px;
+}
+
+.learn {
+    border: 1px solid #AE67FA;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.about__tech__stack {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .course__company {
