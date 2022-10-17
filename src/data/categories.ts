@@ -1,42 +1,47 @@
 export const leftCategories = [
     
     {
-        id: 1, 
+        id: 1,
+        title: "🐛 PokemonWorld",
+        path: "/pokemon"
+    },
+    {
+        id: 2, 
         title: "🎉 Event Creator",
         path: "/party"
     },
     {
-        id: 2, 
+        id: 3, 
         title: "🤡 Ricky and Morty",
         path: "/rick-and-morty"
     },
     {
-        id: 3,
+        id: 4,
         title: "🚚 WeFleet",
         path: "/wefleet"
     }, 
     {
-        id: 4, 
+        id: 5, 
         title: "🌦 Weather App",
         path: "/weather-app"
     },
     { 
-        id: 5, 
+        id: 6, 
         title: "🎲 Fundices",
         path: "/fundices"
     }, 
     {
-        id: 6,
+        id: 7,
         title: "🙋🏻‍♀️ Trivia",
         path: "/trivia"
     }, 
     {
-        id: 7,
+        id: 8,
         title: "🌎 Countrypedia",
         path: "/countrypedia"
     }, 
     {
-        id: 8,
+        id: 9,
         title: "🔗 OneDoor",
         path: "/onedoor"
     }

@@ -14,12 +14,14 @@ import Playlist from "./pages/Playlist"
 import Contact from "./pages/Contact"
 import Party from "./pages/Party"
 import Rick from "./pages/Rick"
+import PokemonWorld from "./pages/PokemonWorld"
 
 const MainRoutes = ({mode}: Mode) => {
   return (
     <div>
         <Routes>
             <Route path="/" element={<AboutMe mode={mode}/>}/>
+            <Route path="pokemon" element={<PokemonWorld mode={mode}/>}/>
             <Route path="/weather-app" element={<WeatherApp mode={mode}/>}/>
             <Route path="/party" element={<Party mode={mode}/>}/>
             <Route path="/rick-and-morty" element={<Rick mode={mode}/>}/>

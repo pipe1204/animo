@@ -91,3 +91,16 @@ export const rickLinks = [
         link: "https://github.com/pipe1204/rick-and-morty"
     },
 ]
+
+export const PokemonLinks = [
+    {
+        id: 1, 
+        title: "Website",
+        link: "https://pokemon-world-zeta.vercel.app/"
+    },
+    {
+        id: 2, 
+        title: "Github",
+        link: "https://github.com/pipe1204/pokemon-world"
+    },
+]
